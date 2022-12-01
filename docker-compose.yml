@@ -4,4 +4,8 @@ services:
     build: .
     ports:
       - "8000:3000"
-      
+    environment:
+      - PORT=3000
+      - NODE_ENV=development
+      - MONGO_DB_CONNECTION_STRING=mongodb+srv://victor:yOwfgRgECdxBKVMN@cluster0.gt2halz.mongodb.net/?retryWrites=true&w=majority
+      - MONGO_DB_NAME=evac
