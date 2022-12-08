@@ -52,9 +52,9 @@ MongoClient.connect(getDbConnectionString(), async (err, client) => {
 });
 
 // Initialize routes
-app.use('/users', userRoutes);
-app.use('/auth', authRoutes);
-app.use('/surveys', surveyRoutes);
-app.use('/adaptions', adaptionRoutes);
-app.use('/health', healthRouter)
-app.use('/files/',generateFileRoutes)
+app.use('/api/users', userRoutes);
+app.use('/api/auth', authRoutes);
+app.use('/api/surveys', surveyRoutes);
+app.use('/api/adaptions', adaptionRoutes);
+app.use('/api/health', healthRouter)
+app.use('/api/files/',generateFileRoutes)
